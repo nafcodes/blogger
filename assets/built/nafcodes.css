@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Equity Text B';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB-Italic.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB-Italic.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Italic.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Italic.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Italic.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Italic.svg#EquityTextB-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Caps A';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsA-Bold.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsA-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA-Bold.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA-Bold.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA-Bold.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA-Bold.svg#EquityCapsA-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Text B';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB-Bold.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Bold.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Bold.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Bold.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-Bold.svg#EquityTextB-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Text B';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB-BoldItalic.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-BoldItalic.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-BoldItalic.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-BoldItalic.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB-BoldItalic.svg#EquityTextB-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Caps B';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsB.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsB.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB.svg#EquityCapsB') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Text B';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextB.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextB.svg#EquityTextB') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Caps B';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsB-Bold.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsB-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB-Bold.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB-Bold.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB-Bold.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsB-Bold.svg#EquityCapsB-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA.svg#EquityTextA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA-BoldItalic.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-BoldItalic.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-BoldItalic.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-BoldItalic.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-BoldItalic.svg#EquityTextA-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA-Italic.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA-Italic.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Italic.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Italic.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Italic.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Italic.svg#EquityTextA-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Caps A';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsA.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityCapsA.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityCapsA.svg#EquityCapsA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA-Bold.eot');
+    src: url('https://lyvl.github.io/resource/font/equity/EquityTextA-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Bold.woff2') format('woff2'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Bold.woff') format('woff'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Bold.ttf') format('truetype'),
+        url('https://lyvl.github.io/resource/font/equity/EquityTextA-Bold.svg#EquityTextA-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}

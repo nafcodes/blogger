@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="noindex,nofollow,none,noarchive,nosnippet,noodp,notranslate,noimageindex" name="robots">
+    <title>Encode HTML dan Manipulasi Teks</title>
+    <script src="https://cdn.nafcodes.com/text-editor/q2o.js"></script>
+    <!--<script src="https://cdn.nafcodes.com/text-editor/o2q.js"></script>-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+    <style>
+        a,
+        abbr,
+        address,
+        article,
+        aside,
+        audio,
+        blockquote,
+        body,
+        canvas,
+        caption,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        iframe,
+        img,
+        ins,
+        label,
+        legend,
+        li,
+        main,
+        mark,
+        nav,
+        ol,
+        p,
+        pre,
+        q,
+        section,
+        small,
+        span,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        ul,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0
+        }
+
+        html {
+            font-size: 62.5%
+        }
+
+        body {
+            font-size: 1.6rem;
+            line-height: 1.4
+        }
+
+        * {
+            font: inherit
+        }
+
+        strong {
+            font-weight: 700
+        }
+
+        em {
+            font-style: italic
+        }
+
+        small,
+        sub,
+        sup {
+            font-size: small
+        }
+
+        a,
+        a:visited {
+            color: inherit
+        }
+
+        article,
+        aside,
+        footer,
+        header,
+        main,
+        nav,
+        section {
+            display: block
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        :after,
+        :before {
+            box-sizing: inherit
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        img,
+        video {
+            max-width: 100%
+        }
+
+        img {
+            border-style: none
+        }
+
+        blockquote,
+        q {
+            quotes: none
+        }
+
+        blockquote:after,
+        blockquote:before,
+        q:after,
+        q:before {
+            content: "";
+            content: none
+        }
+
+        *::selection {
+            background: salmon;
+            color: white;
+        }
+
+        *::-moz-selection {
+            background: salmon;
+            color: white;
+        }
+
+        [hidden] {
+            display: none !important
+        }
+
+        [disabled] {
+            cursor: not-allowed
+        }
+
+        :focus:not(:focus-visible) {
+            outline: 0
+        }
+
+
+        body {
+            margin: 0;
+            padding: 10px;
+            color: #3c3c3c;
+            background-color: white;
+            border: 5px solid #3c3c3c;
+            min-height: 100vh;
+            font-family: 'Inter', -system-ui, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, Oxygen-Sans, Oxygen, Ubuntu, "Open Sans", Cantarell, "Fira Sans", "Droid Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        form {
+            margin: 0;
+            padding: 0;
+        }
+
+        input,
+        select,
+        textarea {
+            font-family: "IBM Plex Mono", monospace;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            display: inline-block;
+            vertical-align: middle;
+            width: 170px;
+            margin: 1px 0;
+            padding: 4px;
+            color: salmon;
+            line-height: normal;
+            background-color: #3c3c3c;
+            border: 2px solid salmon;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            outline: none;
+            outline-offset: -2px;
+        }
+
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            width: auto;
+            color: white;
+            background-color: salmon;
+            border: 2px solid salmon;
+            padding-right: 8px;
+            padding-left: 8px;
+            cursor: pointer;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        input[type="checkbox"],
+        input[type="image"],
+        input[type="radio"] {
+            width: auto;
+            padding: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            position: relative;
+            top: -2px;
+        }
+
+        input[type="color"],
+        input[type="file"],
+        label,
+        select {
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        textarea {
+            overflow: auto;
+            display: block;
+            width: 100%;
+            resize: vertical;
+            width: 100%;
+            min-height: 37vh;
+            padding: 10px 12px;
+
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            background-color: #3c3c3c
+        }
+
+        button:focus,
+        input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus {
+            background-color: salmon
+        }
+
+        button:hover,
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            border: 2px solid #3c3c3c;
+            background-color: #3c3c3c
+        }
+
+        button:active,
+        input[type="button"]:active,
+        input[type="reset"]:active,
+        input[type="submit"]:active {
+            background-color: salmon
+        }
+
+        fieldset {
+            margin: 0 0 1em;
+            padding: 1em;
+            border: 1px solid #e9967a;
+        }
+
+        legend {
+            margin: 0;
+            padding: 0 10px;
+            font-weight: bold;
+        }
+
+        button[disabled],
+        input[disabled],
+        select[disabled],
+        textarea[disabled] {
+            opacity: .7;
+            cursor: default;
+            cursor: not-allowed;
+        }
+
+        input[type="date"][readonly],
+        input[type="email"][readonly],
+        input[type="number"][readonly],
+        input[type="tel"][readonly],
+        input[type="text"][readonly],
+        input[type="url"][readonly],
+        textarea[readonly],
+        input[type="date"][readonly]:focus,
+        input[type="email"][readonly]:focus,
+        input[type="number"][readonly]:focus,
+        input[type="tel"][readonly]:focus,
+        input[type="text"][readonly]:focus,
+        input[type="url"][readonly]:focus,
+        textarea[readonly]:focus {
+            background-color: #eee;
+            cursor: default;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #999
+        }
+
+        :-ms-input-placeholder {
+            color: #999
+        }
+
+        ::-moz-placeholder {
+            color: #999
+        }
+
+        :-moz-placeholder {
+            color: #999
+        }
+
+        :placeholder {
+            color: #999
+        }
+
+        :focus::-webkit-input-placeholder {
+            color: #b9b989
+        }
+
+        :focus:-ms-input-placeholder {
+            color: #b9b989
+        }
+
+        :focus::-moz-placeholder {
+            color: #b9b989
+        }
+
+        :focus:-moz-placeholder {
+            color: #b9b989
+        }
+
+        :focus:placeholder {
+            color: #b9b989
+        }
+
+        .notes-encode {
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend><a href="/p/html-encode.html">Nafcodes: HTML Encode</a><sup id="to:top-notes"><a href="#to:bottom-notes">*</a></sup></legend>
+        <select name="tag" id="tag" required="required" form="form-encode">
+            <option value="">Tag</option>
+            <option value="">&amp;lt;text&amp;gt;</option>
+            <option value="" disabled="disabled">—</option>
+            <option value="a">&amp;lt;a&amp;gt;</option>
+            <option value="abbr">&amp;lt;abbr&amp;gt;</option>
+            <option value="acronym">&amp;lt;acronym&amp;gt;</option>
+            <option value="address">&amp;lt;address&amp;gt;</option>
+            <option value="audio">&amp;lt;audio&amp;gt;</option>
+            <option value="bdi">&amp;lt;bdi&amp;gt;</option>
+            <option value="bdo">&amp;lt;bdo&amp;gt;</option>
+            <option value="blockquote">&amp;lt;blockquote&amp;gt;</option>
+            <option value="button">&amp;lt;button&amp;gt;</option>
+            <option value="cite">&amp;lt;cite&amp;gt;</option>
+            <option value="code">&amp;lt;code&amp;gt;</option>
+            <option value="data">&amp;lt;data&amp;gt;</option>
+            <option value="del">&amp;lt;del&amp;gt;</option>
+            <option value="dfn">&amp;lt;dfn&amp;gt;</option>
+            <option value="div">&amp;lt;div&amp;gt;</option>
+            <option value="embed">&amp;lt;embed&amp;gt;</option>
+            <option value="h1">&amp;lt;h1&amp;gt;</option>
+            <option value="h2">&amp;lt;h2&amp;gt;</option>
+            <option value="h3">&amp;lt;h3&amp;gt;</option>
+            <option value="h4">&amp;lt;h4&amp;gt;</option>
+            <option value="h5">&amp;lt;h5&amp;gt;</option>
+            <option value="h6">&amp;lt;h6&amp;gt;</option>
+            <option value="hr">&amp;lt;hr&amp;gt;</option>
+            <option value="iframe">&amp;lt;iframe&amp;gt;</option>
+            <option value="img">&amp;lt;img&amp;gt;</option>
+            <option value="ins">&amp;lt;ins&amp;gt;</option>
+            <option value="kbd">&amp;lt;kbd&amp;gt;</option>
+            <option value="mark">&amp;lt;mark&amp;gt;</option>
+            <option value="object">&amp;lt;object&amp;gt;</option>
+            <option value="p">&amp;lt;p&amp;gt;</option>
+            <option value="picture">&amp;lt;picture&amp;gt;</option>
+            <option value="pre">&amp;lt;pre&amp;gt;</option>
+            <option value="q">&amp;lt;q&amp;gt;</option>
+            <option value="s">&amp;lt;s&amp;gt;</option>
+            <option value="samp">&amp;lt;samp&amp;gt;</option>
+            <option value="small">&amp;lt;small&amp;gt;</option>
+            <option value="span">&amp;lt;span&amp;gt;</option>
+            <option value="sub">&amp;lt;sub&amp;gt;</option>
+            <option value="sup">&amp;lt;sup&amp;gt;</option>
+            <option value="textarea">&amp;lt;textarea&amp;gt;</option>
+            <option value="time">&amp;lt;time&amp;gt;</option>
+            <option value="u">&amp;lt;u&amp;gt;</option>
+            <option value="var">&amp;lt;var&amp;gt;</option>
+            <option value="video">&amp;lt;video&amp;gt;</option>
+        </select>
+
+        <form action="" id="form-encode" method="get">
+            <input id="text" type="text" name="text" placeholder="Teks/Titel" required="required">
+            <input id="url" type="url" name="url" placeholder="LSS/Pranala/Tautan" required="required">
+            <textarea id="content" name="content" required="required" placeholder="Areateks untuk penyandian karakter spesial dalam kode/paragraf."></textarea>
+            <button type="submit">Konversi</button>
+            <button type="button" id="copy">Salin</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+
+        <div class="notes-encode">
+            <p><sup id="to:bottom-notes"><a href="#to:top-notes">*</a></sup><small>Alat ini berfungsi untuk memanipulasi kode yang akan diposkan di formulir komentar Blogger, khususnya di blog <a href="/">https://nafcodes.com</a>.</small></p>
+        </div>
+
+    </fieldset>
+
+    <script>
+        var select = document.getElementById("tag");
+        inputUrl = document.getElementById("url");
+        inputText = document.getElementById("text");
+        textarea = document.getElementById("content");
+        result = document.getElementById("content");
+        cpy = document.getElementById('copy');
+        rst = document.getElementById("reset");
+        document.addEventListener("DOMContentLoaded", function(event) {
+            if (select.value == "a" || select.value == "img" || select.value == "picture" || select.value == "audio" || select.value == "video" || select.value == "iframe" || select.value == "embed") {
+                inputUrl.disabled = false;
+                inputText.disabled = false;
+                textarea.disabled = true;
+            } else {
+                inputUrl.disabled = true;
+                inputText.disabled = true;
+                textarea.disabled = false;
+            }
+        });
+        select.onchange = function() {
+            if (this.value == "a" || select.value == "img" || select.value == "picture" || select.value == "audio" || select.value == "video" || select.value == "iframe" || select.value == "embed") {
+                inputUrl.disabled = false;
+                inputText.disabled = false;
+                textarea.disabled = true;
+            } else {
+                inputUrl.disabled = true;
+                inputText.disabled = true;
+                textarea.disabled = false;
+            }
+        };
+        if (window.location.search) {
+            var config = q2o(window.location.search);
+            tag = config.tag;
+            if (config.content) {
+                var content = config.content;
+                content = content.replace(/\+/g, " ");
+                content = content.replace(/\&/g, "&amp;amp;");
+                content = content.replace(/\</g, "&amp;lt;");
+                content = content.replace(/\>/g, "&amp;gt;");
+                content = content.replace(/\"/g, "&amp;quot;");
+                content = content.replace(/\'/g, "&amp;apos;");
+                config.content = content;
+                if (config.tag != "") {
+                    result.value = '<i title="' + tag + '">' + content + '</i>', result.select(), result.focus();
+                } else {
+                    result.value = content, result.select(), result.focus();
+                }
+            } else {
+                var url = config.url;
+                url = url.replace(/https:\/\//g, "//");
+                config.url = url;
+                text = config.text;
+                text = text.replace(/\+/g, " ");
+                config.text = text;
+                if (config.tag == "a") {
+                    result.value = '<i title="' + tag + '">[' + text + '](' + url + ')</i>', result.select(), result.focus();
+                } else if (config.tag == "img" || config.tag == "picture" || config.tag == "audio" || config.tag == "video" || config.tag == "iframe" || config.tag == "embed") {
+                    result.value = '<i title="' + tag + '">![' + text + '](' + url + ')</i>', result.select(), result.focus();
+                } else {
+                    result.value = '', result.focus();
+                };
+            };
+        };
+        cpy.onclick = function() {
+            var incopy = result.value;
+            result.value = incopy;
+            result.focus(), result.select(), document.execCommand("copy");
+        };
+        rst.onclick = function() {
+            return result.value = "", result.focus();
+        };
+        document.addEventListener('DOMContentLoaded', function() {
+            function addDefaultScheme(target) {
+                if (target.value.match(/^(?!https?:).+\..+/)) {
+                    target.value = "https://" + target.value;
+                }
+            }
+            var elements = document.querySelectorAll("input[type=url]");
+            Array.prototype.forEach.call(elements, function(el, i) {
+                el.addEventListener("blur", function(e) {
+                    addDefaultScheme(e.target);
+                });
+                el.addEventListener("keydown", function(e) {
+                    if (e.keyCode == 13) {
+                        addDefaultScheme(e.target);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+
+</html>

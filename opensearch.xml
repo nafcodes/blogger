@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Nafcodes</ShortName>
+  <LongName>Nafcodes Search</LongName>
+  <Description>Search through articles posted on Nafcodes</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <AdultContent>false</AdultContent>
+  <Language>id-id</Language>
+  <Developer>Nashrullah Ali Fauzi</Developer>
+  <Contact>nash@nafcodes.com</Contact>
+  <Tags>css html jquery javascript web design</Tags>
+  <Attribution>Search data from Nafcodes https://www.nafcodes.com</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+  <Query role="example" searchTerms="Flexbox"/>
+  <Image height="16" width="16" type="image/vnd.microsoft.icon">https://www.nafcodes.com/favicon.ico</Image>
+  <Image height="64" width="64" type="image/png">https://cdn.nafcodes.com/assets/icons/apple-touch-icon.png</Image>
+  <Url type="text/html" template="https://www.nafcodes.com/search?q={searchTerms}"/>
+</OpenSearchDescription>
